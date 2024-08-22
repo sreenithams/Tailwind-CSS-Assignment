@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>layout position</title>
+  </head>
+  <body class="p-20">
+    1.position
+    <!-- https://tailwindcss.com/docs/position -->
+
+    <div class="container p-7 w-[500px] h-[200px] bg-rose-300 relative">parent
+     
+      <div class="absolute bottom-0 left-0 pr-8 bg-blue-500">
+        <p>Absolute child</p>
+      </div>
+     
+    </div>
+    <div class="container p-7 w-[500px] h-[200px] bg-rose-300 relative mt-7">parent
+     
+      <div class="absolute top-0 right-0 pr-8 bg-blue-500">
+        <p>Absolute child</p>
+      </div>
+     
+    </div>
+
+    <div class="container p-7 w-[500px] h-[200px] bg-red-300 relative mt-8">parent
+     
+      <div class="absolute bottom-0 right-0  bg-blue-500">
+        <p>Absolute child</p>
+      </div>
+     
+    </div>
+    2.display
+
+    <!-- https://tailwindcss.com/docs/display -->
+
+    2.0 flow root
+
+  <div class=" container p-4 w-[300px] h-[200px] bg-blue-300 ">
+      <div class="flow-root ...">
+        <div class="my-4 ...">Well, let me tell you something, ...</div>
+      </div>
+      <div class="flow-root ...">
+        <div class="my-4 ...">Sure, go ahead, laugh if you want...</div>
+      </div>
+    </div>
+
+    2.1 flex
+
+    <div class="flex items-center">
+      <img src="">
+      <div>
+        <strong>Andrew Alfred</strong>
+        <span>Technical advisor</span>
+      </div>
+    </div>
+
+    2.2 inline flex
+
+   <div class="container  p-4 w-[300px] h-[200px] bg-red-200">
+    <p>
+      Today I spent most of the day researching ways to ...
+      <span class="inline-flex items-baseline">
+        <img src="path/to/image.jpg" alt="" class="self-center w-5 h-5 rounded-full mx-1" />
+        <span>
+          <strong>Kramer</strong>
+        </span>
+      </span>
+      keeps telling me there is no way to make it work, that ...
+    </p>
+</div>
+    
+2.3 Grid
+
+<div class=" flex flex-col py-3 mb-10 grid gap-4 grid-cols-3 grid-rows-3 bg-blue-500 auto-rows-[300px] text-center  border-black-200 items-center ">
+   <span class="px-5 py-2 bg-green-200 ">01</span>
+   <span class="px-5 py-2 bg-green-200 ">02</span>
+   <span class="px-5 py-2 bg-green-200 ">03</span>
+   <span class="px-5 py-2 bg-green-200 ">04</span>
+   <span class="px-5 py-2 bg-green-200 "  >05</span>
+   <span class="px-5 py-2 bg-green-200 ">06</span>
+   <span class="px-5 py-2 bg-green-200 ">07</span>
+   <span class="px-5 py-2 bg-green-200 ">08</span>
+   <span class="px-5 py-2 bg-green-200 ">09</span>
+
+</div>
+
+2.4 inline grid
+
+<div class=" container flex bg-gray-400 items-center justify-center">
+ 
+<span class="inline-grid grid-cols-3 gap-4">
+  <span class="px-5 py-2 bg-green-200 ">01</span>
+  <span class="px-5 py-2 bg-green-200 ">02</span>
+  <span class="px-5 py-2 bg-green-200 ">03</span>
+  <span class="px-5 py-2 bg-green-200 ">04</span>
+  <span class="px-5 py-2 bg-green-200 ">05</span>
+  <span class="px-5 py-2 bg-green-200 ">06</span>
+</span>
+<div>
+<span class="inline-grid grid-cols-3 gap-4">
+  <span class="px-5 py-2 bg-green-200 ">01</span>
+  <span class="px-5 py-2 bg-green-200 ">02</span>
+  <span class="px-5 py-2 bg-green-200 ">03</span>
+  <span class="px-5 py-2 bg-green-200 ">04</span>
+  <span class="px-5 py-2 bg-green-200 ">05</span>
+  <span class="px-5 py-2 bg-green-200 ">06</span>
+</span>
+</div>
+</div>
+
+
+2.5  contents
+
+<div class=" container flex justify-center gap-3 items-center text-center">
+  <div class="flex-1 px-4 py-2 gap-3 bg-blue-900">01</div>
+  <div class="contents">
+    <div class="flex-1 py-2 px-4 gap-3 bg-yellow-500">02</div>
+    <div class="flex-1 py-2 px-4 bg-rose-500  gap-3">03</div>
+  </div>
+  <div class="flex-1 py-2 px-4 gap-3 bg-green-500">04</div>
+</div>
+  </body>
+</html>
